@@ -1,0 +1,56 @@
+﻿ <UserControl x:Class="HealthyMe.Views.ProfileCreatorView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HealthyMe.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Foreground="{DynamicResource mainForeground}">
+    <Grid>
+         <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Text="Create Your Profile"
+                   FontSize="48"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="5"
+                   HorizontalAlignment="Center"/>
+        
+        <Button x:Name="submitButton"
+                Content="Submit"
+                Grid.Row="5"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Margin="50,0" Background="#FFB270C2"/>
+        
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2">
+            <TextBlock Text="Name: "
+                       Margin="15,0"
+                       VerticalAlignment="Center"/>
+            
+            <TextBox x:Name="nameTextBox"
+                     Text =""				 
+                     Background="White"
+                     MaxHeight="30"
+                     Width="500"
+                     HorizontalAlignment="Stretch"/>
+        </StackPanel>
+        
+		
+	</Grid>
+</UserControl>
