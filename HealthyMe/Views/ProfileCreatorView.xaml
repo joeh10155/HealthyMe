@@ -27,18 +27,20 @@
                    FontSize="48"
                    Grid.Column="0"
                    Grid.ColumnSpan="5"
-                   HorizontalAlignment="Center"/>
+                   HorizontalAlignment="Center" Foreground="#FF463D3D"/>
         
         <Button x:Name="submitButton"
                 Content="Submit"
                 Grid.Row="5"
                 Grid.Column="1"
                 Grid.ColumnSpan="2"
-                Margin="50,0" Background="#FFB270C2"/>
+                Margin="50,0" Background="#FFB270C2"
+                Click="submitButton_Click"/>
         
         <StackPanel Orientation="Horizontal"
                     Grid.Row="1"
-                    Grid.ColumnSpan="2">
+                    Grid.ColumnSpan="5"
+                    HorizontalAlignment="Center">
             <TextBlock Text="Name: "
                        Margin="15,0"
                        VerticalAlignment="Center"/>
@@ -48,6 +50,45 @@
                      Background="White"
                      MaxHeight="30"
                      Width="500"
+                     Foreground="Black"
+                     HorizontalAlignment="Stretch"/>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="2"
+                    Grid.ColumnSpan="5"
+                    HorizontalAlignment="Center">
+            
+                    <TextBlock Text="Gender: "
+                       Margin="15,0"
+                       VerticalAlignment="Center"/>
+                    
+                    <ComboBox x:Name="genderComboBox"
+                              Width="500"
+                              Background="White"
+                              SelectedIndex="0" 
+                              Foreground="Black">
+                          <ComboBoxItem Content="Male"/>
+                          <ComboBoxItem Content="Female"/>
+                          <ComboBoxItem Content="Prefer Not Say"/>                        
+                    </ComboBox>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="3"
+                    Grid.ColumnSpan="5"
+                    HorizontalAlignment="Center">
+            
+                    <TextBlock Text="Age: "
+                       Margin="15,0"
+                       VerticalAlignment="Center"/>
+                    
+                   <TextBox x:Name="ageTextBox"
+                     Text =""				 
+                     Background="White"
+                     MaxHeight="30"
+                     Width="500"
+                     Foreground="Black"
                      HorizontalAlignment="Stretch"/>
         </StackPanel>
         

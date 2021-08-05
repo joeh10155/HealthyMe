@@ -6,8 +6,10 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
     <Application.Resources>
         <ResourceDictionary>
-			<SolidColorBrush x:Key="mainBackground" Color="#"FF232121"/>
-            <SolidColorBrush x:Key="mainForeground" Color="White"/>
+			<SolidColorBrush x:Key="mainBackground" Color="#FF232121"/>
+            <SolidColorBrush x:Key="mainForeground" Color="#FF463D3D"/>
+            <SolidColorBrush x:Key="mainButtonBackground" Color="#FFB270C2"/>
+            <!--<SolidColorBrush x:Key="mainForeground" Color="White"/>  OLD ONE-->
             
             <ResourceDictionary.MergedDictionaries>
                 <materialDesign:BundledTheme BaseTheme="Light" PrimaryColor="DeepPurple" SecondaryColor="Lime" />

@@ -26,5 +26,10 @@ namespace HealthyMe
 			InitializeComponent();
 			this.DataContext = new ProfileCreatorViewModel();
 		}
-	}
+
+        private void bodyImageSelector_Click(object sender, RoutedEventArgs e)
+        {
+			this.DataContext = new BodyImageSelecterViewModel();
+		}
+    }
 }
